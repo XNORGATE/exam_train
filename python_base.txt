@@ -1,0 +1,600 @@
+1. 問題: PyTorch中用於建立神經網路層的基本模組是什麼？
+   - A. torch.Tensor
+   - B. torch.Module
+   - C. torch.NeuralNet
+   - D. torch.Layer
+   - 答案: B. torch.Module
+2. 問題: 在Scikit-Learn中，哪個函數用於劃分訓練集和測試集？
+   - A. train_test_split
+   - B. train_test_divide
+   - C. train_split_test
+   - D. divide_train_test
+   - 答案: A. train_test_split
+3. 問題: PyTorch的哪個函數可以用來計算梯度下降？
+   - A. torch.optim
+   - B. torch.gradient
+   - C. torch.descent
+   - D. torch.calc
+   - 答案: A. torch.optim
+4. 問題: 在機器學習中，過擬合(overfitting)是指什麼？
+   - A. 模型在訓練集上表現不佳
+   - B. 模型在測試集上表現不佳
+   - C. 模型在訓練集上表現過好，但在測試集上表現不佳
+   - D. 模型在訓練和測試集上都表現不佳
+   - 答案: C. 模型在訓練集上表現過好，但在測試集上表現不佳
+5. 問題: 在Scikit-Learn中，用於構建隨機森林模型的類別是什麼？
+   - A. RandomForest
+   - B. RandomForestClassifier
+   - C. ForestClassifier
+   - D. TreeClassifier
+   - 答案: B. RandomForestClassifier
+6. 問題: 在PyTorch中，用於資料加載和前處理的模組是什麼？
+   - A. torch.utils.data
+   - B. torch.preprocessing
+   - C. torch.dataset
+   - D. torch.loader
+   - 答案: A. torch.utils.data
+7. 問題: Scikit-Learn中用於資料標準化的類別是哪一個？
+   - A. StandardScaler
+   - B. Normalizer
+   - C. MinMaxScaler
+   - D. DataScaler
+   - 答案: A. StandardScaler
+8. 問題: PyTorch中，哪個類別被用來定義損失函數？
+   - A. torch.Function
+   - B. torch.Loss
+   - C. torch.Criterion
+   - D. torch.nn.Module
+   - 答案: C. torch.Criterion
+9. 問題: 在機器學習中，'隨機梯度下降'（SGD）通常用於解決什麼問題？
+   - A. 特徵選擇
+   - B. 優化問題
+   - C. 資料前處理
+   - D. 模型選擇
+   - 答案: B. 優化問題
+10. 問題: Scikit-Learn中用於模型評估的函數是什麼？
+    - A. evaluate_model
+    - B. test_model
+    - C. score
+    - D. assess
+    - 答案: C. score
+11. 問題: 在PyTorch中，用於建立神經網路的父類別是什麼？
+    - A. torch.nn.Module
+    - B. torch.nn.Network
+    - C. torch.nn.Layer
+    - D. torch.nn.NeuralNet
+    - 答案: A. torch.nn.Module
+12. 問題: Scikit-Learn中，用於進行主成分分析（PCA）的類別是什麼？
+    - A. PCA
+    - B. PrincipalComponentAnalysis
+    - C. PCAnalyzer
+    - D. Decomposer
+    - 答案: A. PCA
+13. 問題: 在PyTorch中，哪個類別被用於建立卷積神經網路？
+    - A. torch.nn.ConvNet
+    - B. torch.nn.ConvLayer
+    - C. torch.nn.Conv2d
+    - D. torch.nn.CNN
+    - 答案: C. torch.nn.Conv2d
+14. 問題: 在機器學習中，哪種方法常用於解決分類問題？
+    - A. 線性迴歸
+    - B. 主成分分析
+    - C. 決策樹
+    - D. 梯度提升
+    - 答案: C. 決策樹
+15. 問題: Scikit-Learn中，用於生成訓練集和測試集的函數是哪個？
+    - A. split_data
+    - B. train_test_split
+    - C. divide_dataset
+    - D. split_train_test
+    - 答案: B. train_test_split
+16. 問題: 在PyTorch中，哪個模組被用來處理影像資料集？
+    - A. torchvision
+    - B. torchimage
+    - C. torchpics
+    - D. torchgraphics
+    - 答案: A. torchvision
+17. 問題: Scikit-Learn中用於進行k均值聚類的類別是哪一個？
+    - A. KMeans
+    - B. ClusterMeans
+    - C. KClusters
+    - D. MeanCluster
+    - 答案: A. KMeans
+18. 問題: 在PyTorch中，哪個函數用於應用活化函數ReLU？
+    - A. torch.relu
+    - B. torch.nn.ReLU
+    - C. torch.activation.ReLU
+    - D. torch.functions.relu
+    - 答案: B. torch.nn.ReLU
+19. 問題: 在機器學習中，哪種演算法常用於回歸問題？
+    - A. SVM
+    - B. Logistic Regression
+    - C. Linear Regression
+    - D. Decision Trees
+    - 答案: C. Linear Regression
+20. 問題: Scikit-Learn中，哪個模組包含了資料前處理工具？
+    - A. sklearn.preprocessing
+    - B. sklearn.data
+    - C. sklearn.transform
+    - D. sklearn.utils
+    - 答案: A. sklearn.preprocessing
+21. 問題: 在PyTorch中，哪個類別別用於建立一個全連接（dense）層？
+    - A. torch.nn.Dense
+    - B. torch.nn.FullyConnected
+    - C. torch.nn.Linear
+    - D. torch.nn.Connect
+    - 答案: C. torch.nn.Linear
+22. 問題: Scikit-Learn中用於計算模型的交叉驗證分數的函數是什麼？
+    - A. cross_val_score
+    - B. validate_score
+    - C. cross_validate
+    - D. model_evaluation
+    - 答案: A. cross_val_score
+23. 問題: 在PyTorch中，哪個包含了資料變換和標準化的工具？
+    - A. torch.data
+    - B. torch.transform
+    - C. torch.utils.data
+    - D. torch.preprocessing
+    - 答案: C. torch.utils.data
+24. 問題: 在機器學習中，哪種演算法常用於多類別分類問題？
+    - A. 線性回歸
+    - B. 決策樹
+    - C. 支持向量機（SVM）
+    - D. k-最近鄰（k-NN）
+    - 答案: D. k-最近鄰（k-NN）
+25. 問題: Scikit-Learn中用於特徵降維的技術之一是什麼？
+    - A. 主成分分析（PCA）
+    - B. 線性迴歸
+    - C. 梯度提升樹
+    - D. 隨機森林
+    - 答案: A. 主成分分析（PCA）
+26. 問題: 在PyTorch中，用於建立批次標準化的類別是什麼？
+    - A. torch.nn.BatchNorm
+    - B. torch.nn.BatchStandard
+    - C. torch.nn.Normalize
+    - D. torch.nn.Standardize
+    - 答案: A. torch.nn.BatchNorm
+27. 問題: Scikit-Learn中用於進行支持向量機分類的類別是哪一個？
+    - A. SVC
+    - B. SVClassifier
+    - C. SupportVectorClassifier
+    - D. VectorMachine
+    - 答案: A. SVC
+28. 問題: 在PyTorch中，哪個函數用於將資料集劃分為批次？
+    - A. torch.utils.data.DataLoader
+    - B. torch.utils.data.BatchLoader
+    - C. torch.data.Batch
+    - D. torch.load.DataBatch
+    - 答案: A. torch.utils.data.DataLoader
+29. 問題: 在機器學習中，用於解決非線性問題的常見演算法是什麼？
+    - A. 線性迴歸
+    - B. 決策樹
+    - C. 主成分分析
+    - D. 隨機森林
+    - 答案: B. 決策樹
+30. 問題: Scikit-Learn中用於自動參數調整的工具是什麼？
+    - A. GridSearch
+    - B. AutoParam
+    - C. ParameterSearch
+    - D. GridTune
+    - 答案: A. GridSearch
+31. 問題: 在PyTorch中，用於構建序列神經網路模型的類別是什麼？
+    - A. torch.nn.RNN
+    - B. torch.nn.SeqNN
+    - C. torch.nn.Sequential
+    - D. torch.nn.SeriesNet
+    - 答案: C. torch.nn.Sequential
+32. 問題: Scikit-Learn中用於進行羅吉斯迴歸的類別是哪一個？
+    - A. LogisticRegression
+    - B. LogitRegression
+    - C. RogisticModel
+    - D. RegressionLogit
+    - 答案: A. LogisticRegression
+33. 問題: 在PyTorch中，哪個函數用於將神經網路模型轉換為訓練模式？
+    - A. model.train()
+    - B. model.training()
+    - C. model.to_train()
+    - D. model.set_train()
+    - 答案: A. model.train()
+34. 問題: 在機器學習中，哪種方法常用於特徵降維？
+    - A. 決策樹
+    - B. k-最近鄰
+    - C. 隨機森林
+    - D. 主成分分析
+    - 答案: D. 主成分分析
+35. 問題: Scikit-Learn中，用於產生多類別假資料的函數是什麼？
+    - A. make_multiclass
+    - B. generate_classes
+    - C. create_multiclass
+    - D. make_classification
+    - 答案: D. make_classification
+36. 問題: 在PyTorch中，用於建立梯度下降優化的類別是什麼？
+    - A. torch.optim.SGD
+    - B. torch.optim.GradientDescent
+    - C. torch.nn.Optimizer
+    - D. torch.train.Gradient
+    - 答案: A. torch.optim.SGD
+37. 問題: Scikit-Learn中用於資料分類的決策樹類是什麼？
+    - A. DecisionTree
+    - B. TreeClassifier
+    - C. DecisionTreeClassifier
+    - D. ClassifierTree
+    - 答案: C. DecisionTreeClassifier
+38. 問題: 在PyTorch中，哪個類別別用於建立捲積層？
+    - A. torch.nn.Conv2d
+    - B. torch.nn.Convolution
+    - C. torch.nn.ConvLayer
+    - D. torch.nn.Conv
+    - 答案: A. torch.nn.Conv2d
+39. 問題: 在機器學習中，哪種方法常用於處理分類問題的不平衡資料？
+    - A. 隨機森林
+    - B. 資料過取樣
+    - C. 線性迴歸
+    - D. 梯度提升
+    - 答案: B. 資料過取樣
+40. 問題: Scikit-Learn中，用於進行主成分分析（PCA）降維的類別是什麼？
+    - A. PCA
+    - B. PrincipalComponentAnalysis
+    - C. PCADecomposer
+    - D. FeatureReducer
+    - 答案: A. PCA
+41. 問題: 在PyTorch中，用於建立Dropout以減少過擬合的類別是什麼？
+    - A. torch.nn.Dropout
+    - B. torch.nn.Drop
+    - C. torch.nn.ReduceOverfitting
+    - D. torch.nn.Omit
+    - 答案: A. torch.nn.Dropout
+42. 問題: Scikit-Learn中用於進行線性迴歸的類別是哪一個？
+    - A. LinearRegression
+    - B. RegressionLinear
+    - C. LinRegressor
+    - D. SimpleLinearRegression
+    - 答案: A. LinearRegression
+43. 問題: 在PyTorch中，哪個函數用於計算交叉熵損失？
+    - A. torch.nn.CrossEntropyLoss
+    - B. torch.losses.CrossEntropy
+    - C. torch.nn.EntropyLoss
+    - D. torch.loss.CrossEntropy
+    - 答案: A. torch.nn.CrossEntropyLoss
+44. 問題: 在機器學習中，哪種方法常用於處理遺漏資料問題？
+    - A. 資料插值
+    - B. 隨機森林
+    - C. 資料標準化
+    - D. k-最近鄰
+    - 答案: A. 資料插值
+45. 問題: Scikit-Learn中，用於生成聚類分析假資料的函數是什麼？
+    - A. make_clusters
+    - B. generate_cluster_data
+    - C. create_clusters
+    - D. make_blobs
+    - 答案: D. make_blobs
+46. 問題: 在PyTorch中，用於建立一個長短期記憶（LSTM）網路層的類別是什麼？
+    - A. torch.nn.LSTM
+    - B. torch.nn.LongShortTermMemory
+    - C. torch.nn.RNN_LSTM
+    - D. torch.nn.RecurrentLSTM
+    - 答案: A. torch.nn.LSTM
+47. 問題: Scikit-Learn中用於進行隨機森林分類的類別是哪一個？
+    - A. RandomForest
+    - B. ForestClassifier
+    - C. RandomForestClassifier
+    - D. ClassifierForest
+    - 答案: C. RandomForestClassifier
+48. 問題: 在PyTorch中，哪個函數用於儲存訓練好的模型？
+    - A. torch.save
+    - B. torch.model.save
+    - C. torch.export_model
+    - D. torch.nn.save
+    - 答案: A. torch.save
+49. 問題: 在機器學習中，用於生成合成資料擴增資料集的方法是什麼？
+    - A. 資料增強
+    - B. 特徵選擇
+    - C. 資料降維
+    - D. 資料歸一化
+    - 答案: A. 資料增強
+50. 問題: Scikit-Learn中，用於進行高斯混合模型聚類的類別是什麼？
+    - A. GaussianMixture
+    - B. MixtureModel
+    - C. GaussianCluster
+    - D. ClusterMixture
+    - 答案: A. GaussianMixture
+51. 問題: 在PyTorch中，用於建立二維最大池化層的類別是什麼？
+    - A. torch.nn.MaxPool2d
+    - B. torch.nn.MaxPooling2d
+    - C. torch.nn.PoolMax2d
+    - D. torch.nn.TwoDMaxPool
+    - 答案: A. torch.nn.MaxPool2d
+52. 問題: Scikit-Learn中用於進行主成分分析（PCA）的類別是哪一個？
+    - A. PCA
+    - B. PrincipalComponentAnalysis
+    - C. PCADecomposer
+    - D. PCAModel
+    - 答案: A. PCA
+53. 問題: 在PyTorch中，哪個類別別用於建立一個單層感知器？
+    - A. torch.nn.Perceptron
+    - B. torch.nn.SingleLayer
+    - C. torch.nn.Linear
+    - D. torch.nn.SLP
+    - 答案: C. torch.nn.Linear
+54. 問題: 在機器學習中，用於解決過擬合問題的一種技術是什麼？
+    - A. 特徵選擇
+    - B. 交叉驗證
+    - C. 網格搜尋
+    - D. 資料標準化
+    - 答案: B. 交叉驗證
+55. 問題: Scikit-Learn中，用於進行羅吉斯迴歸分析的類別是什麼？
+    - A. LogisticRegression
+    - B. LogitRegression
+    - C. RogisticModel
+    - D. RegressionLogit
+    - 答案: A. LogisticRegression
+56. 問題: 在PyTorch中，用於建立軟最大化（Softmax）層的類別是什麼？
+    - A. torch.nn.Softmax
+    - B. torch.nn.SoftMaxLayer
+    - C. torch.nn.MaxSoft
+    - D. torch.nn.SoftMaximum
+    - 答案: A. torch.nn.Softmax
+57. 問題: Scikit-Learn中用於進行K均值聚類分析的類別是哪一個？
+    - A. KMeans
+    - B. KCluster
+    - C. ClusterKMeans
+    - D. MeanCluster
+    - 答案: A. KMeans
+58. 問題: 在PyTorch中，哪個類別別用於建立一個一維卷積層？
+    - A. torch.nn.Conv1d
+    - B. torch.nn.Convolution1d
+    - C. torch.nn.ConvLayer1d
+    - D. torch.nn.OneDConv
+    - 答案: A. torch.nn.Conv1d
+59. 問題: 在機器學習中，用於選擇最佳模型參數的技術是什麼？
+    - A. 資料標準化
+    - B. 特徵降維
+    - C. 網格搜尋
+    - D. 資料增強
+    - 答案: C. 網格搜尋
+60. 問題: Scikit-Learn中，用於進行支持向量機（SVM）分類的類別是什麼？
+    - A. SVMClassifier
+    - B. SupportVectorClassifier
+    - C. SVC
+    - D. VectorMachine
+    - 答案: C. SVC
+61. 問題: 在PyTorch中，用於建立批次標準化（Batch Normalization）層的類別是什麼？
+    - A. torch.nn.BatchNorm
+    - B. torch.nn.BatchNormalization
+    - C. torch.nn.NormalizeBatch
+    - D. torch.nn.BatchNorm
+    - 答案: D. torch.nn.BatchNorm
+62. 問題: Scikit-Learn中用於進行羅吉斯迴歸的類別是哪一個？
+    - A. LogisticRegression
+    - B. LogitRegression
+    - C. RogisticModel
+    - D. RegressionLogit
+    - 答案: A. LogisticRegression
+63. 問題: 在PyTorch中，哪個類別別用於建立一個長短期記憶（LSTM）網路？
+    - A. torch.nn.LSTM
+    - B. torch.nn.LongShortMemory
+    - C. torch.nn.RNNLSTM
+    - D. torch.nn.LSTMNetwork
+    - 答案: A. torch.nn.LSTM
+64. 問題: 在機器學習中，哪種方法常用於處理類別不平衡問題？
+    - A. 隨機森林
+    - B. 交叉驗證
+    - C. 資料過取樣或欠取樣
+    - D. 特徵降維
+    - 答案: C. 資料過取樣或欠取樣
+65. 問題: Scikit-Learn中，用於進行隨機森林回歸的類別是什麼？
+    - A. RandomForestRegressor
+    - B. RandomForestRegression
+    - C. ForestRegressor
+    - D. RegressionForest
+    - 答案: A. RandomForestRegressor
+66. 問題: 在PyTorch中，用於建立自適應平均池化層的類別是什麼？
+    - A. torch.nn.AdaptiveAvgPool
+    - B. torch.nn.AvgPool
+    - C. torch.nn.AdaptiveAveragePooling
+    - D. torch.nn.AdaptiveAvgPooling
+    - 答案: D. torch.nn.AdaptiveAvgPooling
+67. 問題: Scikit-Learn中用於進行高斯過程迴歸的類別是哪一個？
+    - A. GaussianProcessRegressor
+    - B. GaussianRegressor
+    - C. ProcessGaussianRegression
+    - D. RegressionGaussianProcess
+    - 答案: A. GaussianProcessRegressor
+68. 問題: 在PyTorch中，哪個函數用於將模型轉換為評估模式？
+    - A. model.eval()
+    - B. model.evaluate()
+    - C. model.testing()
+    - D. model.set_eval()
+    - 答案: A. model.eval()
+69. 問題: 在機器學習中，用於特徵選擇的常用方法是什麼？
+    - A. 資料增強
+    - B. 隨機森林
+    - C. 逐步回歸
+    - D. 交叉驗證
+    - 答案: C. 逐步回歸
+70. 問題: Scikit-Learn中，用於進行主成分分析（PCA）降維的函數是什麼？
+    - A. PCA
+    - B. decompose.PCA
+    - C. reduce.PCA
+    - D. analysis.PCA
+    - 答案: A. PCA
+71. 問題: 在PyTorch中，用於建立一個單層感知器網路的類別是什麼？
+    - A. torch.nn.Perceptron
+    - B. torch.nn.SLP
+    - C. torch.nn.Linear
+    - D. torch.nn.SingleLayerPerceptron
+    - 答案: C. torch.nn.Linear
+72. 問題: Scikit-Learn中用於進行聚類分析的K均值演算法的類別是哪一個？
+    - A. KMeans
+    - B. ClusterKMeans
+    - C. MeanCluster
+    - D. KCluster
+    - 答案: A. KMeans
+73. 問題: 在PyTorch中，哪個類別別用於建立一個二維卷積層？
+    - A. torch.nn.Conv2d
+    - B. torch.nn.ConvLayer2d
+    - C. torch.nn.Convolution2d
+    - D. torch.nn.TwoDConvolution
+    - 答案: A. torch.nn.Conv2d
+74. 問題: 在機器學習中，用於減少資料維度的技術是什麼？
+    - A. 特徵選擇
+    - B. 主成分分析
+    - C. 資料增強
+    - D. 隨機森林
+    - 答案: B. 主成分分析
+75. 問題: Scikit-Learn中，用於進行支持向量機回歸的類別是什麼？
+    - A. SVR
+    - B. SVMRegressor
+    - C. SupportVectorRegressor
+    - D. VectorRegression
+    - 答案: A. SVR
+76. 問題: 在PyTorch中，用於建立二維捲積層的類別是什麼？
+    - A. torch.nn.Conv2d
+    - B. torch.nn.Convolution2d
+    - C. torch.nn.TwoDConv
+    - D. torch.nn.LayerConv2d
+    - 答案: A. torch.nn.Conv2d
+77. 問題: Scikit-Learn中用於進行隨機森林分類的類別是哪一個？
+    - A. RandomForestClassifier
+    - B. ForestClassifier
+    - C. RandomClassifier
+    - D. TreeClassifier
+    - 答案: A. RandomForestClassifier
+78. 問題: 在PyTorch中，哪個類別別用於建立一個循環神經網路（RNN）層？
+    - A. torch.nn.RNN
+    - B. torch.nn.RecurrentNet
+    - C. torch.nn.CycleNet
+    - D. torch.nn.LoopNet
+    - 答案: A. torch.nn.RNN
+79. 問題: 在機器學習中，用於自動選擇最佳模型參數的技術是什麼？
+    - A. 資料標準化
+    - B. 網格搜尋
+    - C. 特徵選擇
+    - D. 隨機搜尋
+    - 答案: B. 網格搜尋
+80. 問題: Scikit-Learn中，用於進行多類別分類的支持向量機（SVM）的類別是什麼？
+    - A. MultiClassSVM
+    - B. SVMClassifier
+    - C. SupportVectorClassifier
+    - D. LinearSVC
+    - 答案: D. LinearSVC
+81. 問題: 在PyTorch中，用於建立三維捲積層的類別是什麼？
+    - A. torch.nn.Conv3d
+    - B. torch.nn.Convolution3d
+    - C. torch.nn.ThreeDConv
+    - D. torch.nn.LayerConv3d
+    - 答案: A. torch.nn.Conv3d
+82. 問題: Scikit-Learn中用於進行決策樹回歸的類別是哪一個？
+    - A. DecisionTreeRegressor
+    - B. TreeRegressor
+    - C. RegressorTree
+    - D. DecisionRegressor
+    - 答案: A. DecisionTreeRegressor
+83. 問題: 在PyTorch中，哪個函數用於將模型轉換為訓練模式？
+    - A. model.train()
+    - B. model.training()
+    - C. model.to_train()
+    - D. model.set_train()
+    - 答案: A. model.train()
+84. 問題: 在機器學習中，用於自動選擇特徵的技術是什麼？
+    - A. 特徵增強
+    - B. 主成分分析
+    - C. 選擇自模型
+    - D. 隨機搜尋
+    - 答案: C. 選擇自模型
+85. 問題: Scikit-Learn中，用於進行支持向量機分類的類別是什麼？
+    - A. SVC
+    - B. SupportVectorClassifier
+    - C. SVMClassifier
+    - D. ClassifierSVM
+    - 答案: A. SVC
+86. 問題: 在PyTorch中，用於建立一維捲積層的類別是什麼？
+    - A. torch.nn.Conv1d
+    - B. torch.nn.ConvLayer1d
+    - C. torch.nn.OneDConv
+    - D. torch.nn.Convolution1d
+    - 答案: A. torch.nn.Conv1d
+87. 問題: Scikit-Learn中用於進行AdaBoost分類的類別是哪一個？
+    - A. AdaBoostClassifier
+    - B. BoostingClassifier
+    - C. AdaClassifier
+    - D. ClassifierAdaBoost
+    - 答案: A. AdaBoostClassifier
+88. 問題: 在PyTorch中，哪個函數用於計算均方誤差損失？
+    - A. torch.nn.MSELoss
+    - B. torch.loss.MSE
+    - C. torch.nn.SquareError
+    - D. torch.losses.MeanSquareError
+    - 答案: A. torch.nn.MSELoss
+89. 問題: 在機器學習中，用於對資料進行標準化處理的方法是什麼？
+    - A. 資料降維
+    - B. 特徵選擇
+    - C. 資料標準化
+    - D. 資料轉換
+    - 答案: C. 資料標準化
+90. 問題: Scikit-Learn中，用於進行高斯混合模型聚類的類別是什麼？
+    - A. GaussianMixture
+    - B. MixtureModel
+    - C. GaussianCluster
+    - D. ClusterMixture
+    - 答案: A. GaussianMixture
+91. 問題: 在PyTorch中，用於建立梯度下降優化器的類別是什麼？
+    - A. torch.optim.SGD
+    - B. torch.optim.GradientDescent
+    - C. torch.nn.Optimizer
+    - D. torch.train.Gradient
+    - 答案: A. torch.optim.SGD
+92. 問題: Scikit-Learn中用於進行羅吉斯迴歸的類別是哪一個？
+    - A. LogisticRegression
+    - B. LogitRegression
+    - C. RogisticModel
+    - D. RegressionLogit
+    - 答案: A. LogisticRegression
+93. 問題: 在PyTorch中，哪個函數用於建立資料加載器？
+    - A. torch.utils.data.DataLoader
+    - B. torch.data.Loader
+    - C. torch.load.Data
+    - D. torch.dataset.Loader
+    - 答案: A. torch.utils.data.DataLoader
+94. 問題: 在機器學習中，用於降低模型過擬合風險的技術是什麼？
+    - A. 交叉驗證
+    - B. 資料增強
+    - C. 特徵選擇
+    - D. 網格搜尋
+    - 答案: A. 交叉驗證
+95. 問題: Scikit-Learn中，用於進行k最近鄰（KNN）分類的類別是什麼？
+    - A. KNeighborsClassifier
+    - B. NearestNeighbors
+    - C. KNNClassifier
+    - D. NeighborsClassifier
+    - 答案: A. KNeighborsClassifier
+96. 問題: 在PyTorch中，用於建立二維平均池化層的類別是什麼？
+    - A. torch.nn.AvgPool2d
+    - B. torch.nn.MeanPooling2d
+    - C. torch.nn.Pool2d
+    - D. torch.nn.AveragePool2d
+    - 答案: A. torch.nn.AvgPool2d
+97. 問題: Scikit-Learn中用於進行主成分分析（PCA）降維的類別是哪一個？
+    - A. PCA
+    - B. PrincipalComponentAnalysis
+    - C. PCAReducer
+    - D. DecomposePCA
+    - 答案: A. PCA
+98. 問題: 在PyTorch中，哪個類別別用於建立全連接（Dense）網路層？
+    - A. torch.nn.Dense
+    - B. torch.nn.FullyConnected
+    - C. torch.nn.Linear
+    - D. torch.nn.Connect
+    - 答案: C. torch.nn.Linear
+99. 問題: 在機器學習中，用於解決過擬合問題的常見技術是什麼？
+    - A. 特徵選擇
+    - B. 資料標準化
+    - C. 交叉驗證
+    - D. 網格搜尋
+    - 答案: C. 交叉驗證
+100. 問題: Scikit-Learn中，用於進行k均值聚類分析的類別是什麼？
+    - A. KMeans
+    - B. ClusterMeans
+    - C. KCluster
+    - D. MeanCluster
+    - 答案: A. KMeans
