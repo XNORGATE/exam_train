@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Interface</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Initialize TailwindCSS
@@ -13,11 +13,11 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ["Open Sans", "sans-serif"],
+                        sans: ['Open Sans', 'sans-serif'],
                     },
                 },
             },
-        };
+        }
     </script>
     <style>
         body {
@@ -26,13 +26,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f9fafb;
-            /* Light theme background */
         }
 
         .question-card {
-            width: 600px;
-            padding: 2rem;
+            width: 1000px;
+            padding: 4rem;
             background: #ffffff;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -60,35 +58,22 @@
             display: block;
             margin-top: 1rem;
         }
-
-        .jump-to-result {
-            display: block;
-            margin-top: 1rem;
-            text-align: center;
-        }
-
-        .card {
-            background-color: #fef3c7;
-            padding: 1rem;
-            margin-top: 1rem;
-            border-radius: 0.5rem;
-            border: 1px solid #fde68a;
-        }
     </style>
 </head>
 
-<body class="text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans">
     <div id="app" class="question-card">
         <div class="question" v-if="currentQuestion">
             <div class="question-number mb-4 text-lg font-bold">
                 第 {{ currentQuestion.question_number }} 題
             </div>
-            <div class="question-text mb-4 text-lg font-bold">{{ currentQuestion.question }}</div>
+            <div class="question-text mb-4 text-lg font-bold">
+                {{ currentQuestion.question }}
+            </div>
             <form @submit.prevent="submitAnswer">
-                <div class="options text-lg font-bold">
-                    <label class="option" v-for="(option, key) in currentQuestion.options" :key="key">
-                        <input type="radio" :value="key" v-model="selectedOption" /> {{
-                        key }}: {{ option }}
+                <div class="options">
+                    <label class="option text-lg font-bold" v-for="(option, key) in currentQuestion.options" :key="key">
+                        <input type="radio" :value="key" v-model="selectedOption"> {{ key }}: {{ option }}
                     </label>
                 </div>
                 <div class="flex row pb-2 space-x-4">
@@ -100,17 +85,12 @@
                         class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 text-lg font-bold">
                         下一題
                     </button>
-                    <button type="button" @click="jumpToResult"
-                        class="jump-to-result px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">
-                        直接繳交
-                    </button>
+
                 </div>
             </form>
             <div class="submit-result" v-if="showResult">
                 <p v-if="isCorrect" class="text-green-600 text-lg font-bold">正確!</p>
-                <p v-else class="text-red-600 text-lg font-bold">
-                    錯誤，正確答案應為 {{ currentQuestion.correct_answer }}.
-                </p>
+                <p v-else class="text-red-600 text-lg font-bold">錯誤，正確答案應為 {{ currentQuestion.correct_answer }}.</p>
             </div>
         </div>
         <div class="result" v-else>
@@ -118,18 +98,7 @@
                 測驗結束!
             </div>
             <div class="score text-lg font-bold">
-                你的答對率: {{ score }}/{{ questions.length }} 題
-            </div>
-            <div class="wrong-answers" v-if="wrongAnswers.length > 0">
-                <h3 class="text-lg font-semibold mb-2">錯誤，正確答案應為:</h3>
-                <div v-for="wrongAnswer in wrongAnswers" :key="wrongAnswer.question_number" class="card">
-                    <div>
-                        第 {{ wrongAnswer.question_number }} 題 : {{ wrongAnswer.question
-                        }}
-                    </div>
-                    <div>你的答案 : {{ wrongAnswer.selected_answer }}</div>
-                    <div>正確答案 : {{ wrongAnswer.correct_answer }}</div>
-                </div>
+                你的答對率: {{ score }}/{{ questions.length }}
             </div>
             <button @click="restartExam"
                 class="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 text-lg font-bold">
@@ -144,7 +113,7 @@
 
         createApp({
             setup() {
-                var default_questions = ref([
+                const questions = ref([
                     {
                         "question_number": 1,
                         "question": "PyTorch中用於建立神經網路層的基本模組是什麼？",
@@ -1244,6 +1213,7 @@
                             "D": "MeanCluster"
                         },
                         "correct_answer": "A"
+<<<<<<< HEAD
                     }
                     // Add more questions as needed
                 ]);
@@ -1254,107 +1224,56 @@
                     for (let i = array.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
                         [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+=======
+>>>>>>> parent of f2a68f8 (random questions and options)
                     }
-                }
-
-                function randomizeQuiz(quizRef) {
-                    const quiz = quizRef.value;
-
-                    // Shuffle the entire quiz
-                    shuffleArray(quiz);
-
-                    // Update question numbers and shuffle options
-                    quiz.forEach((question, index) => {
-                        // Update the question number
-                        question.question_number = index + 1;
-
-                        // Extract options values and shuffle them
-                        const optionsValues = Object.values(question.options);
-                        shuffleArray(optionsValues);
-
-                        // Assign shuffled values back to the keys
-                        Object.keys(question.options).forEach((key, idx) => {
-                            question.options[key] = optionsValues[idx];
-                        });
-
-                        // Update correct answer
-                        const correctAnswerKey = Object.keys(question.options).find(key => question.options[key] === question.correct_answer);
-                        question.correct_answer = correctAnswerKey;
-                    });
-                }
-
-
-
-
-                randomizeQuiz(default_questions);
-                console.log(default_questions);
-                // Now, default_questions is already randomized
-                let questions = default_questions;
-                ////
+                ]);
                 const currentQuestionIndex = ref(0);
-                const currentQuestion = ref(
-                    questions.value[currentQuestionIndex.value]
-                );
-                const selectedOption = ref("");
+                const currentQuestion = ref(questions.value[currentQuestionIndex.value]);
+                const selectedOption = ref('');
                 const score = ref(0);
                 const showResult = ref(false);
                 const isCorrect = ref(false);
-                const wrongAnswers = ref([]);
 
                 function submitAnswer() {
                     showResult.value = true;
                     if (selectedOption.value === currentQuestion.value.correct_answer) {
                         isCorrect.value = true;
                         score.value++;
+                        setTimeout(() => {
+                            if (currentQuestionIndex.value < questions.value.length - 1) {
+                                currentQuestionIndex.value++;
+                                currentQuestion.value = questions.value[currentQuestionIndex.value];
+                                selectedOption.value = '';
+                                showResult.value = false;
+                                isCorrect.value = false;
+                            } else {
+                                currentQuestion.value = null;
+                            }
+                        }, 0);
                     } else {
                         isCorrect.value = false;
-                        wrongAnswers.value.push({
-                            ...currentQuestion.value,
-                            selected_answer: selectedOption.value,
-                        });
-                    }
-                    setTimeout(nextQuestion, 0);
-                }
-
-                function nextQuestion() {
-                    if (currentQuestionIndex.value < questions.value.length - 1) {
-                        currentQuestionIndex.value++;
-                        currentQuestion.value =
-                            questions.value[currentQuestionIndex.value];
-                        selectedOption.value = "";
-                        showResult.value = false;
-                        isCorrect.value = false;
-                    } else {
-                        currentQuestion.value = null;
                     }
                 }
 
                 function goBack() {
                     if (currentQuestionIndex.value > 0) {
                         currentQuestionIndex.value--;
-                        currentQuestion.value =
-                            questions.value[currentQuestionIndex.value];
-                        selectedOption.value = "";
+                        currentQuestion.value = questions.value[currentQuestionIndex.value];
+                        selectedOption.value = '';
                         showResult.value = false;
                         isCorrect.value = false;
                     }
                 }
 
-                function jumpToResult() {
-                    currentQuestion.value = null;
-                }
-
                 function restartExam() {
                     currentQuestionIndex.value = 0;
                     currentQuestion.value = questions.value[currentQuestionIndex.value];
-                    selectedOption.value = "";
+                    selectedOption.value = '';
                     score.value = 0;
                     showResult.value = false;
                     isCorrect.value = false;
-                    wrongAnswers.value = [];
                 }
-
-
 
                 return {
                     questions,
@@ -1362,15 +1281,13 @@
                     selectedOption,
                     submitAnswer,
                     goBack,
-                    jumpToResult,
                     score,
                     showResult,
                     isCorrect,
-                    wrongAnswers,
-                    restartExam,
+                    restartExam
                 };
-            },
-        }).mount("#app");
+            }
+        }).mount('#app');
     </script>
 </body>
 
