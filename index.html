@@ -1263,10 +1263,12 @@
                     // Shuffle the entire quiz
                     shuffleArray(quiz);
 
-                    // Update question numbers and shuffle options
                     quiz.forEach((question, index) => {
                         // Update the question number
                         question.question_number = index + 1;
+
+                        // Store the correct option value before shuffling
+                        const correctOptionValue = question.options[question.correct_answer];
 
                         // Extract options values and shuffle them
                         const optionsValues = Object.values(question.options);
@@ -1277,11 +1279,12 @@
                             question.options[key] = optionsValues[idx];
                         });
 
-                        // Update correct answer
-                        const correctAnswerKey = Object.keys(question.options).find(key => question.options[key] === question.correct_answer);
+                        // Find the key for the correct answer after shuffling
+                        const correctAnswerKey = Object.keys(question.options).find(key => question.options[key] === correctOptionValue);
                         question.correct_answer = correctAnswerKey;
                     });
                 }
+
 
 
 
@@ -1306,6 +1309,7 @@
                     if (selectedOption.value === currentQuestion.value.correct_answer) {
                         isCorrect.value = true;
                         score.value++;
+                        setTimeout(nextQuestion, 500);
                     } else {
                         isCorrect.value = false;
                         wrongAnswers.value.push({
@@ -1313,7 +1317,7 @@
                             selected_answer: selectedOption.value,
                         });
                     }
-                    setTimeout(nextQuestion, 0);
+
                 }
 
                 function nextQuestion() {
