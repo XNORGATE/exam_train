@@ -1312,10 +1312,17 @@
                         setTimeout(nextQuestion, 500);
                     } else {
                         isCorrect.value = false;
-                        wrongAnswers.value.push({
-                            ...currentQuestion.value,
-                            selected_answer: selectedOption.value,
-                        });
+                        isCorrect.value = false;
+                        // Check if the current question is already in the wrongAnswers array
+                        const alreadyExists = wrongAnswers.value.some(
+                            wrongAnswer => wrongAnswer.question_number === currentQuestion.value.question_number
+                        );
+                        if (!alreadyExists) {
+                            wrongAnswers.value.push({
+                                ...currentQuestion.value,
+                                selected_answer: selectedOption.value,
+                            });
+                        }
                     }
 
                 }
